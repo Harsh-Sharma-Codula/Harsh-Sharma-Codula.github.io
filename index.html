@@ -8,16 +8,20 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #1E1E1E;
             color: #fff;
             margin: 0;
             padding: 0;
             position: relative;
             min-height: 100vh;
+            overflow: hidden; /* Prevent scrollbars due to background image */
+            background: url('background.gif') center/cover no-repeat;
+            background-color: rgba(0, 0, 0, 0.5); /* 50% transparency black */
         }
         .container {
             text-align: center;
-            margin-top: 20vh; /* Adjust this value to center the container */
+            position: relative; /* Ensure z-index works */
+            z-index: 1; /* Ensure content appears above background */
+            padding-top: 20vh; /* Adjust this value to center the container */
         }
         h1 {
             font-size: 48px;
@@ -45,7 +49,7 @@
             position: absolute;
             bottom: 20px;
             right: 20px;
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.5); /* 50% transparency black */
             padding: 20px;
             border-radius: 10px;
         }
@@ -68,7 +72,7 @@
         <h1>Harsh Sharma</h1>
         <p>Pursuing double major in Computer Science and Mathematics</p>
         <p>Chennai Mathematical Institute</p>
-        <a href="CV.pdf">My CV</a>
+        <a href="CV.pdf">CV</a>
     </div>
 
     <div class="contact-me">
