@@ -12,13 +12,12 @@
             color: #fff;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            position: relative;
+            min-height: 100vh;
         }
         .container {
             text-align: center;
+            margin-top: 20vh; /* Adjust this value to center the container */
         }
         h1 {
             font-size: 48px;
@@ -43,20 +42,20 @@
             background-color: #0056b3;
         }
         .contact-me {
-            background-color: #333;
-            padding: 50px;
-            border-radius: 10px;
-            margin-top: 40px;
+            position: absolute;
             bottom: 20px;
             right: 20px;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
         }
         .contact-me h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
+            font-size: 24px;
+            margin-bottom: 10px;
         }
         .contact-me p {
-            font-size: 18px;
-            margin-bottom: 20px;
+            font-size: 16px;
+            margin-bottom: 10px;
         }
         .contact-me a {
             background-color: #4CAF50;
@@ -65,18 +64,17 @@
 </head>
 <body>
 
-<div class="container">
-    <h1>Harsh Sharma</h1>
-    <p>Pursuing double major in Computer Science and Mathematics</p>
-    <p>Chennai Mathematical Institute</p>
-    <a href="CV.pdf">My CV</a>
-</div>
+    <div class="container">
+        <h1>Harsh Sharma</h1>
+        <p>Pursuing double major in Computer Science and Mathematics</p>
+        <a href="CV.pdf">My CV</a>
+    </div>
 
-<div class="contact-me">
-    <h2>Contact Me</h2>
-    <p>If you have any inquiries, feel free to reach out:</p>
-    <p>Email: <a href="mailto:harshs.ug2023@cmi.ac.in">harshs.ug2023@cmi.ac.in</a></p>
-</div>
+    <div class="contact-me">
+        <h2>Contact Me</h2>
+        <p>If you have any inquiries, feel free to reach out:</p>
+        <p>Email: <a href="mailto:harshs.ug2023@cmi.ac.in">harshs.ug2023@cmi.ac.in</a></p>
+    </div>
 
 </body>
 </html>
