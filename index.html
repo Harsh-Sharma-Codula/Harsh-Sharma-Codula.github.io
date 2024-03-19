@@ -8,20 +8,17 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1E1E1E;
             color: #fff;
             margin: 0;
             padding: 0;
-            position: relative;
-            min-height: 100vh;
-            overflow: hidden; /* Prevent scrollbars due to background image */
-            background: url('Vaporwave.gif') center/cover no-repeat;
-            background-color: rgba(0, 0, 0, 0.5); /* 50% transparency black */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
             text-align: center;
-            position: relative; /* Ensure z-index works */
-            z-index: 1; /* Ensure content appears above background */
-            padding-top: 20vh; /* Adjust this value to center the container */
         }
         h1 {
             font-size: 48px;
@@ -46,20 +43,18 @@
             background-color: #0056b3;
         }
         .contact-me {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            background-color: rgba(0, 0, 0, 0.5); /* 50% transparency black */
-            padding: 20px;
+            background-color: #333;
+            padding: 50px;
             border-radius: 10px;
+            margin-top: 40px;
         }
         .contact-me h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
+            font-size: 30px;
+            margin-bottom: 20px;
         }
         .contact-me p {
-            font-size: 16px;
-            margin-bottom: 10px;
+            font-size: 18px;
+            margin-bottom: 20px;
         }
         .contact-me a {
             background-color: #4CAF50;
@@ -72,7 +67,7 @@
         <h1>Harsh Sharma</h1>
         <p>Pursuing double major in Computer Science and Mathematics</p>
         <p>Chennai Mathematical Institute</p>
-        <a href="CV.pdf">CV</a>
+        <a href="CV.pdf">My CV</a>
     </div>
 
     <div class="contact-me">
